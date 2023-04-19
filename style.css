@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
+}
+
+/* .hide {
+    display: none;
+} */
+
+/* screen1 */
+.main1 { 
+    background-color: #FFFFFF;
+    width: 42.4rem;
+    height: 42.8rem;
+
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+h1, p {
+    color: #34355B
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+    line-height: 3rem;
+    
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p, button {
+    font-family: 'DM Sans', sans-serif;
+}
+
+#cookie { 
+    width: 30rem;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.main1 img:hover {
+    cursor: pointer;
+    animation-name: shake;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* screen2 */
+
+.main2 {
+    background-color: #FFFFFF;
+    width: 42.8rem;
+    height: 54.2rem;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 4.8rem 6.4rem;
+    gap: 1.7rem;
+    margin-top: -30rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+fieldset {
+    padding: 1rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    border: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+
+.main2 fieldset {
+    animation: revealMessage 2s;
+    animation: scaleMessage 2s;
+}
+
+#btnReset {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: white;    
+    background: #FF9500;
+    padding: 1.6rem;
+    border-radius: .4rem;
+    border: none;
+    transition: transform 1s;
+}
+
+#btnReset:hover {
+    background: #754603;
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+/* animation */
+@keyframes shake {
+    0%  {   transform:     translate(2px, 1px) rotate(0deg); }
+    10% {   transform:     translate(-1px, -2px) rotate(-2deg); }
+    20% {   transform:     translate(-3px, 0px) rotate(3deg); }
+    30% {   transform:     translate(0px, 2px) rotate(0deg); }
+    40% {   transform:     translate(1px, -1px) rotate(1deg); }
+    50% {   transform:     translate(-1px, 2px) rotate(-1deg); }
+    60% {   transform:     translate(-3px, 1px) rotate(0deg); }
+    70% {   transform:     translate(2px, 1px) rotate(-2deg); }
+    80% {   transform:     translate(-1px, -1px) rotate(4deg); }
+    90% {   transform:     translate(2px, 2px) rotate(0deg); }
+    100%{   transform:     translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes revealMessage {
+    0% {
+  
+        transform: translateY(16.5rem)
+    }
+    100% {
+  
+        transform: translateY(0rem)
+    }
+}
+  
+@keyframes scaleMessage {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
